@@ -19,7 +19,7 @@
 <nav>
 <div class="logo">AS.</div>
 <div class="nav-links">
-<a href="#home">Home</a>
+<a href="#home" class="active">Home</a>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
@@ -28,24 +28,175 @@
 </div>
 </nav>
 
-<!-- Hero -->
+<!-- Hero Section -->
 <section id="home" class="hero">
+
+<div class="profile-container">
+<img src="https://lh3.googleusercontent.com/d/17-KHeCatCxEPqeZ93jaw28hSXmP2kkOj" alt="Abdullah Shoaib" class="profile-img">
+</div>
+
 <h1>ABDULLAH SHOAIB</h1>
-<p>Cyber Security & AI Student</p>
+
+<div id="typing-text" class="typing-text"></div>
+
+<div class="social-links">
+
+<a href="https://github.com/abdo99283" target="_blank" class="social-btn">GitHub</a>
+
+<a href="https://www.linkedin.com/in/abdallah-shoieb-178a753b5" target="_blank" class="social-btn">LinkedIn</a>
+
+<a href="https://wa.me/201025421574" target="_blank" class="social-btn">WhatsApp</a>
+
+<a href="https://www.instagram.com/1boda_ahmed11" target="_blank" class="social-btn">Instagram</a>
+
+</div>
+
 </section>
 
-<!-- About -->
+<!-- About Section -->
 <section id="about">
+
 <h2>About Me</h2>
+
 <p>
-I am Abdullah Ahmed Abdullah Shoaib, a dedicated student specializing
-in Cyber Security and Artificial Intelligence.
+I am Abdullah Ahmed Abdullah Shoaib, a dedicated and passionate student specializing in Cyber Security and Artificial Intelligence.
+My journey in technology is driven by a deep interest in how systems work and how to protect them.
+I am constantly exploring the intersection of AI and security to build more resilient and intelligent solutions.
 </p>
+
 </section>
 
-<!-- Contact -->
+<!-- Skills Section -->
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-category">
+
+<h3>Programming & Web</h3>
+
+<span>Python (Beginner)</span>
+<span>Python (Intermediate)</span>
+<span>HTML</span>
+<span>C++</span>
+<span>PHP</span>
+<span>MySQL</span>
+
+</div>
+
+<div class="skill-category">
+
+<h3>Electronics</h3>
+
+<span>Arduino Level 1</span>
+<span>Arduino Level 2</span>
+
+</div>
+
+<div class="skill-category">
+
+<h3>Cyber Security Tools</h3>
+
+<span>Packet Tracer</span>
+<span>Kali Linux</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+
+<h3>Network Security Scanner</h3>
+
+<p>
+A Python-based tool designed to scan local networks for vulnerabilities and open ports,
+providing a detailed security report.
+</p>
+
+<a href="https://github.com/abdo99283" target="_blank">View on GitHub</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>AI Intrusion Detection System</h3>
+
+<p>
+An experimental system using machine learning algorithms to detect
+and prevent unauthorized access in real-time.
+</p>
+
+<a href="https://github.com/abdo99283" target="_blank">View on GitHub</a>
+
+</div>
+
+<div class="project-card">
+
+<h3>Smart Home Security Hub</h3>
+
+<p>
+Integrated Arduino-based security system with facial recognition
+and remote monitoring capabilities.
+</p>
+
+<a href="https://github.com/abdo99283" target="_blank">View on GitHub</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Certifications -->
+<section id="certifications">
+
+<h2>Certifications</h2>
+
+<div class="certs-grid">
+
+<div class="cert-card">
+
+<h3>Arduino Level 1</h3>
+<p>Electronics Hub</p>
+<p>2023</p>
+
+</div>
+
+<div class="cert-card">
+
+<h3>Arduino Level 2</h3>
+<p>Electronics Hub</p>
+<p>2023</p>
+
+</div>
+
+<div class="cert-card">
+
+<h3>Cyber Security Fundamentals</h3>
+<p>Cisco Networking Academy</p>
+<p>2024</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact Section -->
 <section id="contact">
-<h2>Contact Me</h2>
+
+<h2>Get In Touch</h2>
 
 <form id="contact-form">
 
@@ -55,12 +206,16 @@ in Cyber Security and Artificial Intelligence.
 
 <textarea name="message" placeholder="Your Message" required></textarea>
 
-<button type="submit">Send Message</button>
+<button type="submit" id="send-btn">Send Message</button>
 
 </form>
 
-<div id="success-msg" style="display:none;">
+<div id="success-msg" style="display:none;color:green;margin-top:10px;">
 Message sent successfully!
+</div>
+
+<div id="error-msg" style="display:none;color:red;margin-top:10px;">
+Failed to send message
 </div>
 
 </section>
@@ -69,31 +224,53 @@ Message sent successfully!
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
+
 (function(){
 emailjs.init("IQNjxA6Msg4xtjGcG");
 })();
 
-document.getElementById("contact-form").addEventListener("submit", function(e){
+const form = document.getElementById("contact-form");
+const successMsg = document.getElementById("success-msg");
+const errorMsg = document.getElementById("error-msg");
+const btn = document.getElementById("send-btn");
+
+form.addEventListener("submit", function(e){
 
 e.preventDefault();
+
+btn.innerText="Sending...";
+btn.disabled=true;
 
 emailjs.sendForm(
 "service_peud0jo",
 "template_979f072",
 this
-).then(function(){
+)
 
-document.getElementById("success-msg").style.display = "block";
+.then(function(){
 
-document.getElementById("contact-form").reset();
+successMsg.style.display="block";
+errorMsg.style.display="none";
 
-}, function(error){
+form.reset();
 
-alert("Failed to send message");
+btn.innerText="Send Message";
+btn.disabled=false;
+
+})
+
+.catch(function(){
+
+successMsg.style.display="none";
+errorMsg.style.display="block";
+
+btn.innerText="Send Message";
+btn.disabled=false;
 
 });
 
 });
+
 </script>
 
 <script src="script.js"></script>
