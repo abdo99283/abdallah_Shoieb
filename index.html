@@ -1,279 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdullah Shoaib | Portfolio</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Shoaib | Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<!-- Navigation -->
-<nav>
-<div class="logo">AS.</div>
-<div class="nav-links">
-<a href="#home" class="active">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-
-<!-- Hero Section -->
-<section id="home" class="hero">
-
-<div class="profile-container">
-<img src="https://lh3.googleusercontent.com/d/17-KHeCatCxEPqeZ93jaw28hSXmP2kkOj" alt="Abdullah Shoaib" class="profile-img">
-</div>
-
-<h1>ABDULLAH SHOAIB</h1>
-
-<div id="typing-text" class="typing-text"></div>
-
-<div class="social-links">
-
-<a href="https://github.com/abdo99283" target="_blank" class="social-btn">GitHub</a>
-
-<a href="https://www.linkedin.com/in/abdallah-shoieb-178a753b5" target="_blank" class="social-btn">LinkedIn</a>
-
-<a href="https://wa.me/201025421574" target="_blank" class="social-btn">WhatsApp</a>
-
-<a href="https://www.instagram.com/1boda_ahmed11" target="_blank" class="social-btn">Instagram</a>
-
-</div>
-
-</section>
-
-<!-- About Section -->
-<section id="about">
-
-<h2>About Me</h2>
-
-<p>
-I am Abdullah Ahmed Abdullah Shoaib, a dedicated and passionate student specializing in Cyber Security and Artificial Intelligence.
-My journey in technology is driven by a deep interest in how systems work and how to protect them.
-I am constantly exploring the intersection of AI and security to build more resilient and intelligent solutions.
-</p>
-
-</section>
-
-<!-- Skills Section -->
-<section id="skills">
-
-<h2>My Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill-category">
-
-<h3>Programming & Web</h3>
-
-<span>Python (Beginner)</span>
-<span>Python (Intermediate)</span>
-<span>HTML</span>
-<span>C++</span>
-<span>PHP</span>
-<span>MySQL</span>
-
-</div>
-
-<div class="skill-category">
-
-<h3>Electronics</h3>
-
-<span>Arduino Level 1</span>
-<span>Arduino Level 2</span>
-
-</div>
-
-<div class="skill-category">
-
-<h3>Cyber Security Tools</h3>
-
-<span>Packet Tracer</span>
-<span>Kali Linux</span>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Projects -->
-<section id="projects">
-
-<h2>Featured Projects</h2>
-
-<div class="projects-grid">
-
-<div class="project-card">
-
-<h3>Network Security Scanner</h3>
-
-<p>
-A Python-based tool designed to scan local networks for vulnerabilities and open ports,
-providing a detailed security report.
-</p>
-
-<a href="https://github.com/abdo99283" target="_blank">View on GitHub</a>
-
-</div>
-
-<div class="project-card">
-
-<h3>AI Intrusion Detection System</h3>
-
-<p>
-An experimental system using machine learning algorithms to detect
-and prevent unauthorized access in real-time.
-</p>
-
-<a href="https://github.com/abdo99283" target="_blank">View on GitHub</a>
-
-</div>
-
-<div class="project-card">
-
-<h3>Smart Home Security Hub</h3>
-
-<p>
-Integrated Arduino-based security system with facial recognition
-and remote monitoring capabilities.
-</p>
-
-<a href="https://github.com/abdo99283" target="_blank">View on GitHub</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Certifications -->
-<section id="certifications">
-
-<h2>Certifications</h2>
-
-<div class="certs-grid">
-
-<div class="cert-card">
-
-<h3>Arduino Level 1</h3>
-<p>Electronics Hub</p>
-<p>2023</p>
-
-</div>
-
-<div class="cert-card">
-
-<h3>Arduino Level 2</h3>
-<p>Electronics Hub</p>
-<p>2023</p>
-
-</div>
-
-<div class="cert-card">
-
-<h3>Cyber Security Fundamentals</h3>
-<p>Cisco Networking Academy</p>
-<p>2024</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-
-<h2>Get In Touch</h2>
-
-<form id="contact-form">
-
-<input type="text" name="name" placeholder="Your Name" required>
-
-<input type="email" name="email" placeholder="Your Email" required>
-
-<textarea name="message" placeholder="Your Message" required></textarea>
-
-<button type="submit" id="send-btn">Send Message</button>
-
-</form>
-
-<div id="success-msg" style="display:none;color:green;margin-top:10px;">
-Message sent successfully!
-</div>
-
-<div id="error-msg" style="display:none;color:red;margin-top:10px;">
-Failed to send message
-</div>
-
-</section>
-
-<!-- EmailJS -->
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">AS.</div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="profile-container">
+            <img src="https://lh3.googleusercontent.com/d/17-KHeCatCxEPqeZ93jaw28hSXmP2kkOj" alt="Abdullah Shoaib" class="profile-img" referrerPolicy="no-referrer">
+        </div>
+        <h1>ABDULLAH SHOAIB</h1>
+        <div id="typing-text" class="typing-text"></div>
+        <div class="social-links">
+            <a href="https://github.com/abdo99283" target="_blank" class="social-btn" title="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/abdallah-shoieb-178a753b5" target="_blank" class="social-btn" title="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://wa.me/201025421574" target="_blank" class="social-btn" title="WhatsApp">
+                <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884 0 2.225.658 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.301-.15-1.779-.879-2.053-.979-.275-.1-.475-.15-.675.15-.199.299-.772.979-.946 1.178-.175.199-.349.224-.651.075-.3-.15-1.265-.467-2.41-1.488-.891-.795-1.492-1.777-1.667-2.076-.175-.3-.019-.463.13-.612.134-.133.301-.349.451-.523.149-.174.199-.299.299-.498.1-.199.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.225-.244-.583-.491-.503-.675-.512-.174-.008-.374-.01-.574-.01s-.524.075-.798.374c-.275.299-1.047 1.022-1.047 2.492 0 1.47 1.071 2.891 1.221 3.09.15.199 2.107 3.217 5.104 4.512.713.308 1.27.492 1.703.63.716.228 1.368.196 1.883.119.574-.085 1.779-.726 2.028-1.42.25-.694.25-1.293.175-1.42-.075-.127-.275-.201-.575-.351z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/1boda_ahmed11" target="_blank" class="social-btn" title="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.227.412.558.217.957.477 1.377.896.419.42.679.819.896 1.377.164.422.359 1.057.413 2.227.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.249 1.805-.413 2.227-.217.558-.477.957-.896 1.377-.42.419-.819.679-1.377.896-.422.164-1.057.359-2.227.413-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.805-.249-2.227-.412-.558-.217-.957-.477-1.377-.896-.419-.42-.679-.819-.896-1.377-.164-.422-.359-1.057-.413-2.227-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.249-1.805.412-2.227.217-.558.477-.957.896-1.377.42-.419.819-.679 1.377-.896.422-.164 1.057-.359 2.227-.413 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.277.057-2.149.259-2.912.556-.788.306-1.457.715-2.123 1.381s-1.075 1.335-1.381 2.123c-.297.763-.499 1.635-.556 2.912-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.057 1.277.259 2.149.556 2.912.306.788.715 1.457 1.381 2.123s1.335 1.075 2.123 1.381c.763.297 1.635.499 2.912.556 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.277-.057 2.149-.259 2.912-.556.788-.306 1.457-.715 2.123-1.381s1.075-1.335 1.381-2.123c.297-.763.499-1.635.556-2.912.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.057-1.277-.259-2.149-.556-2.912-.306-.788-.715-1.457-1.381-2.123s-1.335-1.075-2.123-1.381c-.763-.297-1.635-.499-2.912-.556-1.28-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>I am Abdullah Ahmed Abdullah Shoaib, a dedicated and passionate student specializing in Cyber Security and Artificial Intelligence. My journey in technology is driven by a deep interest in how systems work and how to protect them. I am constantly exploring the intersection of AI and security to build more resilient and intelligent solutions.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming & Web</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Python (Beginner)</span>
+                    <span class="skill-item">Python (Intermediate)</span>
+                    <span class="skill-item">HTML</span>
+                    <span class="skill-item">C++</span>
+                    <span class="skill-item">PHP</span>
+                    <span class="skill-item">MySQL</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Electronics</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Arduino Level 1</span>
+                    <span class="skill-item">Arduino Level 2</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Cyber Security Tools</h3>
+                <div class="skill-list">
+                    <span class="skill-item">Packet Tracer</span>
+                    <span class="skill-item">Kali Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Network Security Scanner</h3>
+                    <p>A Python-based tool designed to scan local networks for vulnerabilities and open ports, providing a detailed security report.</p>
+                    <a href="https://github.com/abdo99283" target="_blank" class="btn-github">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>AI Intrusion Detection System</h3>
+                    <p>An experimental system using machine learning algorithms to detect and prevent unauthorized access in real-time.</p>
+                    <a href="https://github.com/abdo99283" target="_blank" class="btn-github">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Smart Home Security Hub</h3>
+                    <p>Integrated Arduino-based security system with facial recognition and remote monitoring capabilities.</p>
+                    <a href="https://github.com/abdo99283" target="_blank" class="btn-github">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="reveal">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certs-grid">
+            <div class="cert-card">
+                <h3>Arduino Level 1</h3>
+                <span class="cert-org">Electronics Hub</span>
+                <span class="cert-year">2023</span>
+            </div>
+            <div class="cert-card">
+                <h3>Arduino Level 2</h3>
+                <span class="cert-org">Electronics Hub</span>
+                <span class="cert-year">2023</span>
+            </div>
+            <div class="cert-card">
+                <h3>Cyber Security Fundamentals</h3>
+                <span class="cert-org">Cisco Networking Academy</span>
+                <span class="cert-year">2024</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            <div id="success-msg" class="success-msg">Message sent successfully!</div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div id="chatbot-toggle" class="chatbot-toggle">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chatbot-header">
+                <h3>AI Assistant</h3>
+                <div id="close-chat" class="close-chat">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </div>
+            </div>
+            <div id="chat-messages" class="chatbot-messages">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-chat" class="btn-send">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+<!-- EmailJS Library -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-
 (function(){
 emailjs.init("IQNjxA6Msg4xtjGcG");
 })();
 
-const form = document.getElementById("contact-form");
-const successMsg = document.getElementById("success-msg");
-const errorMsg = document.getElementById("error-msg");
-const btn = document.getElementById("send-btn");
-
-form.addEventListener("submit", function(e){
-
+document.getElementById("contact-form").addEventListener("submit", function(e){
 e.preventDefault();
 
-btn.innerText="Sending...";
-btn.disabled=true;
-
 emailjs.sendForm(
-"service_peud0jo",
-"template_979f072",
+"SERVICE_ID",
+"TEMPLATE_ID",
 this
-)
+).then(function(){
 
-.then(function(){
+document.getElementById("success-msg").style.display = "block";
+document.getElementById("contact-form").reset();
 
-successMsg.style.display="block";
-errorMsg.style.display="none";
+}, function(error){
 
-form.reset();
-
-btn.innerText="Send Message";
-btn.disabled=false;
-
-})
-
-.catch(function(){
-
-successMsg.style.display="none";
-errorMsg.style.display="block";
-
-btn.innerText="Send Message";
-btn.disabled=false;
+alert("Failed to send message");
 
 });
-
 });
-
 </script>
 
 <script src="script.js"></script>
 
-</body>
+‏</body>
 </html>
